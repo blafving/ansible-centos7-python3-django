@@ -19,9 +19,9 @@ chmod 640 /etc/sudoers
 
 Then edit `/etc/sudoers` 
 
-'''bash
+```bash
 visudo
-'''
+```
 
 Comment out the line that says `# %wheel        ALL=(ALL)       ALL` and uncomment the line that says `%wheel  ALL=(ALL)       NOPASSWD: ALL`. Then let's become the `your_project_ansible_user` user, and generate keys:
 

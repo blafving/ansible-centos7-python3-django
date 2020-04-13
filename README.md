@@ -17,7 +17,13 @@ usermod -aG wheel your_project_ansible_user
 chmod 640 /etc/sudoers
 ```
 
-Then edit `/etc/sudoers`. Comment out the line that says `# %wheel        ALL=(ALL)       ALL` and uncomment the line that says `%wheel  ALL=(ALL)       NOPASSWD: ALL`. Then let's become the `your_project_ansible_user` user, and generate keys:
+Then edit `/etc/sudoers` 
+
+'''bash
+visudo
+'''
+
+Comment out the line that says `# %wheel        ALL=(ALL)       ALL` and uncomment the line that says `%wheel  ALL=(ALL)       NOPASSWD: ALL`. Then let's become the `your_project_ansible_user` user, and generate keys:
 
 ```bash
 su - your_project_ansible_user

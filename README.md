@@ -36,6 +36,13 @@ You will then need to add your public key from your host control machine to `you
 echo "ssh-rsa AAAAB3NzYourKeyYourKeyYourKeyYourKeyYourKeyYourKeyHR6s53+irm9uVBP8se2IH1Vw4ETfjtdzI4vHce1lYwFVQx9V9cmKFyxCnroV7bTx6EPQ2WqkpAOfM5IGG7vGnrX3M0MPLrA0T8XrhPpCzM2GfNR8fqOQiPROP5blahblahblahblahblah5TQknqu7/twBtXuMpKakR4Vo08cq1MBJI8akEG/tzppoeYuRY8BzKqJVD+2Gp1RgBVsXLxX2W9ng6cFAHTRxs65koTWyVLCCCXsP54X4UqJRy1x5/PumL1VJn8LvXTGcOyfyFSBLClQ== you@yourdomain.com" >> .ssh/authorized_keys
 chmod 600 .ssh/authorized_keys
 ```
+Test that it worked 
+
+```bash
+ssh your_project_ansible_user@your_server_IP 
+```
+
+If you get a permission denied error, then try [this quick workaround](https://www.digitalocean.com/community/questions/ssh-copy-id-not-working-permission-denied-publickey)
 
 ## Getting started
 

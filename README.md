@@ -6,7 +6,9 @@ You'll want to come up with a service account name that you'll use in place of `
 
 ## Preparing a Destination Server
 
-The destination server will need to be kickstarted with CentOS 7. Log in as root to your freshly created Digital Ocean droplet (you used SSH keys, right?), and create a user called `your_project_ansible_user` on the destination server:
+The destination server will need to be kickstarted with CentOS 7. If using Windows consider setting up SSH keys when you start the droplet. This allows you to use OpenSSH or WSL without any fuss. Simply copy your public key and add it under SSH keys. 
+
+Log in as root to your freshly created Digital Ocean droplet (you used SSH keys, right?), and create a user called `your_project_ansible_user` on the destination server:
 
 ```bash
 adduser your_project_ansible_user

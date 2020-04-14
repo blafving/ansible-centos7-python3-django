@@ -42,8 +42,6 @@ Test that it worked
 ssh your_project_ansible_user@your_server_IP 
 ```
 
-If you get a permission denied error, then try [this quick workaround](https://www.digitalocean.com/community/questions/ssh-copy-id-not-working-permission-denied-publickey)
-
 ## Getting started
 
 Clone this repository.
